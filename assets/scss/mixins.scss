@@ -1,0 +1,10 @@
+@mixin spacing{
+    padding: 5vh 2vw;
+    margin: 2vh 0;
+}
+
+@mixin centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,80 @@
+@import "mixins.scss";
+@import "variables.scss";
+@import "fonts.scss";
+
+/* 
+Global Styles
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(45deg, $colorRed 12.50%, $colorPeach 12.50%, $colorPeach 25%, $colorYellow 25%, $colorYellow 37.50%, $colorGreen 37.50%, $colorGreen 50%, $colorRed 50%, $colorRed 62.50%, $colorPeach 62.50%, $colorPeach 75%, $colorYellow 75%, $colorYellow 87.50%, $colorGreen 87.50%, $colorGreen 100%);
+    background-repeat: no-repeat;
+}
+
+/* 
+Header Style
+*/
+
+header{
+    @include spacing;
+    a{
+        text-decoration: none;
+        font-size: 3rem;
+        color: black;
+    }
+}
+
+/*
+Main Style
+*/
+
+main{
+    @include spacing;
+    @include centering;
+    .headline{
+        position: relative;
+        color: white;
+        padding: 5vh 5vw;
+        h1{
+            font-size: 10rem;
+            font-family: $fontGochi;
+            text-align: center;
+        }
+        h2{
+            @extend h1 ;
+        }
+        p{
+            font-size: 3rem;
+            font-family: $fontGochi;
+            position: absolute;
+            top:0;
+            right:20px;
+            background-color: $colorGreen;
+            padding: 40px 40px;
+            border-radius: 50%;
+        };
+    }
+}
+
+/* 
+Footer Style
+*/
+
+footer{
+    @include spacing;
+    text-align: right;
+    a{
+        margin: 10px;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+

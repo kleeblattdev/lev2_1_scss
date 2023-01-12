@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Gochi Hand";
+  src: url(../fonts/Gochi_Hand/GochiHand-Regular.ttf);
+}
+/* 
+Global Styles
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(45deg, #ff8787 12.5%, #f8c4b4 12.5%, #f8c4b4 25%, #e5ebb2 25%, #e5ebb2 37.5%, #bce29e 37.5%, #bce29e 50%, #ff8787 50%, #ff8787 62.5%, #f8c4b4 62.5%, #f8c4b4 75%, #e5ebb2 75%, #e5ebb2 87.5%, #bce29e 87.5%, #bce29e 100%);
+  background-repeat: no-repeat;
+}
+
+/* 
+Header Style
+*/
+header {
+  padding: 5vh 2vw;
+  margin: 2vh 0;
+}
+header a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: black;
+}
+
+/*
+Main Style
+*/
+main {
+  padding: 5vh 2vw;
+  margin: 2vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .headline {
+  position: relative;
+  color: white;
+  padding: 5vh 5vw;
+}
+main .headline h1, main .headline h2 {
+  font-size: 10rem;
+  font-family: "Gochi Hand", cursive;
+  text-align: center;
+}
+main .headline p {
+  font-size: 3rem;
+  font-family: "Gochi Hand", cursive;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background-color: #bce29e;
+  padding: 40px 40px;
+  border-radius: 50%;
+}
+
+/* 
+Footer Style
+*/
+footer {
+  padding: 5vh 2vw;
+  margin: 2vh 0;
+  text-align: right;
+}
+footer a {
+  margin: 10px;
+}
+footer a img {
+  width: 30px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
